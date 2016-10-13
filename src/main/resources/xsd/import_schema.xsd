@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:include schemaLocation="Billing.xsd" />
+    <xsd:annotation>
+        <xsd:documentation xml:lang="en">
+            schema for import bank data
+        </xsd:documentation>
+    </xsd:annotation>
+
+    <xsd:element name="document">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="billing" type="Billing" minOccurs="0" maxOccurs="unbounded"/>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>

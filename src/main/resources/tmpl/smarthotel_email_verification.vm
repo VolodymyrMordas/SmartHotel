@@ -1,0 +1,13 @@
+Welcome to SmartHotel <br />
+
+Dear, $user.firstName $user.lastName ! <br />
+
+We want to verify your email ($user.email))! <br />
+
+Click on url below, please :) <br /> <br />
+
+<a href="http://localhost:8080/SmartHotel/v1/user/email/confirmation/$verification.code">
+    http://localhost:8080/SmartHotel/v1/user/email/confirmation/$verification.code</a>
+
+
+

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- payments. import from bank -->
+<document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="xsd/import_schema.xsd">
+    <billing>
+        <orderId>1</orderId>
+        <amount>1345.50</amount>
+        <currencyCode>980</currencyCode>
+        <paymentDate>2016-06-12T12:01:28</paymentDate>
+    </billing>
+    <billing>
+        <orderId>2</orderId>
+        <amount>1345.50</amount>
+        <currencyCode>980</currencyCode>
+        <paymentDate>2016-06-12T12:01:28</paymentDate>
+    </billing>
+    <billing>
+        <orderId>3</orderId>
+        <amount>1345.50</amount>
+        <currencyCode>980</currencyCode>
+        <paymentDate>2016-06-12T12:01:28</paymentDate>
+    </billing>
+    <billing>
+        <orderId>2</orderId>
+        <amount>1345.50</amount>
+        <currencyCode>980</currencyCode>
+        <paymentDate>2016-06-12T12:01:28</paymentDate>
+    </billing>
+    <billing>
+        <orderId>4</orderId>
+        <amount>1045.50</amount>
+        <currencyCode>980</currencyCode>
+        <paymentDate>2016-06-12T12:01:28</paymentDate>
+    </billing>
+
+
+</document>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.1">
+
+    <persistence-unit name="SmartHotelPU" transaction-type="JTA">
+        <jta-data-source>jdbc/SmartHotel</jta-data-source>
+        <class>com.smarthotel.entities.Billing</class>
+        <class>com.smarthotel.entities.Apartment</class>
+        <class>com.smarthotel.entities.Building</class>
+        <class>com.smarthotel.entities.Order</class>
+        <class>com.smarthotel.entities.User</class>
+        <class>com.smarthotel.entities.ApartmentMedia</class>
+        <class>com.smarthotel.entities.ApartmentPrice</class>
+        <class>com.smarthotel.entities.Verification</class>
+    </persistence-unit>
+</persistence>

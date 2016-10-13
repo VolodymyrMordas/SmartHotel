@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:annotation>
+        <xsd:documentation>
+            Validation Billing Schema
+        </xsd:documentation>
+    </xsd:annotation>
+
+    <xsd:complexType name="Billing">
+        <xsd:sequence>
+            <xsd:element name="orderId" type="xsd:long"/>
+            <xsd:element name="amount" type="xsd:decimal"/>
+            <xsd:element name="currencyCode" type="CurrencyCode" />
+            <xsd:element name="paymentDate" type="PaymentDateTime"/>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <!--<xsd:simpleType name="BillingCode">-->
+        <!--<xsd:restriction base="xsd:string">-->
+            <!--<xsd:pattern value="\d{3}-[A-Z]{2}" />-->
+        <!--</xsd:restriction>-->
+    <!--</xsd:simpleType>-->
+
+    <xsd:simpleType name="CurrencyCode">
+        <xsd:restriction base="xsd:integer">
+            <xsd:enumeration value="980" />
+            <xsd:enumeration value="826" />
+            <xsd:enumeration value="978" />
+            <xsd:enumeration value="840" />
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="PaymentDateTime">
+        <xsd:restriction base="xsd:dateTime" />
+    </xsd:simpleType>
+</xsd:schema>

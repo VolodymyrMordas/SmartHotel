@@ -1,0 +1,10 @@
+Welcome to SmartHotel!
+
+Dear, $user.firstName $user.lastName !
+
+We want to verify your email ($user.email))!
+
+Click on url below please :)
+
+
+

@@ -1,0 +1,44 @@
+.figure{
+    float: left;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.circle {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: #ff5500;
+}
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 15px solid #ff5500;
+}
+.square{
+    width: 10px;
+    height: 15px;
+    background-color: #ff5500;
+}
+.select2-container {
+    z-index: 1060;
+}
+.modal-backdrop{
+    background-color: #FFFFFF;
+}
+.loader{
+    width: 250px;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-image: url("../images/loader.gif");
+    margin: 25% auto;
+}
+#map, #hotel-map {
+    width: 570px;
+    height: 200px;
+}
+#hotel-view-map{
+    width: 100%;
+    height: 110px;
+}
