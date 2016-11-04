@@ -32,9 +32,10 @@ $(function () {
             this.refreshTable();
 
             $('#hotel-create-order').on('click', function(e){
-                var newOrder = new $.hotel.view.orderCreate();
-                $.hotel.util.modal(newOrder.template());
-                that.refreshTable();
+                alert('hola :)');
+                //var newOrder = new $.hotel.view.orderCreate();
+                //$.hotel.util.modal(newOrder.template());
+                //that.refreshTable();
             });
 
             return this;
