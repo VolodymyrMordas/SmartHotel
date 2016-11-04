@@ -16,7 +16,7 @@ public class TemplateService {
 
     private String templateName;
     private HashMap<String, Object> params;
-    private String templatePath = "./resources/tmpl/";
+    private String templatePath = "./tmpl/";
 
     public TemplateService(String templateName) {
         this.templateName = templateName;
@@ -37,7 +37,6 @@ public class TemplateService {
         velocityProperties.put("class.resource.loader.class",
                 "org.apache.velocity.runtime.resource.loader.ClasspathResourceLoader");
         velocityEngine.init(velocityProperties);
-//        velocityEngine.init();
 
         Template t = velocityEngine.getTemplate(getTemplatePath() + this.templateName);
         VelocityContext context = new VelocityContext();

@@ -12,7 +12,7 @@ import java.util.List;
 @NamedQueries({
         @NamedQuery(name = "Order.findByUserId", query = "select order from Order order where order.user.id = :userId")
 })
-@Table(name = "k_order", schema = "public", catalog = "karolino")
+@Table(name = "k_order", schema = "public")
 public class Order extends GenericEntity<Long> implements Serializable {
 
     enum ORDER_STATUS {

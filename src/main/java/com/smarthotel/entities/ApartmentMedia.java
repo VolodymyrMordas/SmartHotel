@@ -7,7 +7,7 @@ import java.io.Serializable;
 import java.sql.Timestamp;
 
 @Entity
-@Table(name = "k_apartment_media", schema = "public", catalog = "karolino")
+@Table(name = "k_apartment_media", schema = "public")
 public class ApartmentMedia extends GenericEntity<Long> implements Serializable {
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)

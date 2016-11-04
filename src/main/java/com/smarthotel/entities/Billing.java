@@ -13,7 +13,7 @@ import java.util.Date;
 @NamedQueries({
         @NamedQuery(name = "Billing.findByOrderId", query = "select billing from Billing billing where billing.orderId = :orderId")
 })
-@Table(name = "k_billing", schema = "public", catalog = "karolino")
+@Table(name = "k_billing", schema = "public")
 public class Billing extends GenericEntity<Long> implements Serializable {
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)

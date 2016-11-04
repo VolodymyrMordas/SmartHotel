@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 import java.sql.Timestamp;
 
 @Entity
-@Table(name = "k_apartment_price", schema = "public", catalog = "karolino")
+@Table(name = "k_apartment_price", schema = "public")
 public class ApartmentPrice extends GenericEntity<Long> implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id

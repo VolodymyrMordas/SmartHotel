@@ -10,7 +10,7 @@ import java.sql.Timestamp;
 import java.util.Date;
 
 @Entity
-@Table(name = "k_building", schema = "public", catalog = "karolino")
+@Table(name = "k_building", schema = "public")
 public class Building extends GenericEntity<Long> implements Serializable {
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)

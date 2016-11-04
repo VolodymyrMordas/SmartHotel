@@ -13,7 +13,7 @@ import java.util.List;
 @NamedQueries({
         @NamedQuery(name = "Apartment.findByApartmentId", query = "select a from Apartment a where a.buildingId = :buildingId")
 })
-@Table(name = "k_apartment", schema = "public", catalog = "karolino")
+@Table(name = "k_apartment", schema = "public")
 public class Apartment extends GenericEntity<Long> implements Serializable {
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)

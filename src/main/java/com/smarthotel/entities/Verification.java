@@ -14,7 +14,7 @@ import java.util.Date;
         @NamedQuery(name = "Verification.findByUserType", query = "select v from Verification v where v.userId = :userId and v.type = :type"),
         @NamedQuery(name = "Verification.findByUserId", query = "select v from Verification v where v.userId = :userId")
 })
-@Table(name = "k_verification", schema = "public", catalog = "karolino")
+@Table(name = "k_verification", schema = "public")
 public class Verification extends GenericEntity<Long> implements Serializable {
 
     public static short T_PHONE = 0;

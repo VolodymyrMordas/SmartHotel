@@ -12,7 +12,7 @@ import java.sql.Timestamp;
 import java.util.Date;
 
 @Entity
-@Table(name = "k_user", schema = "public", catalog = "karolino")
+@Table(name = "k_user", schema = "public")
 @JsonRootName(value = "user")
 public class User extends GenericEntity<Long> implements Serializable {
 
